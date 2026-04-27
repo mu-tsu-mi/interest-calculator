@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 // setter: React.Dispatch or (val: number) => void
 interface CalculatorContextType {
   principal: number;
-  setPrincipal: React.Dispatch<React.SetStateAction<number>>;
+  setPrincipal: (val: number) => void;
   rate: number;
   setRate: React.Dispatch<React.SetStateAction<number>>;
   months: number;
