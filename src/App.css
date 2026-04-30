@@ -1,3 +1,21 @@
+.app {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-result-wrapper {
+  background-image: url("./assets/piggybank.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* .counter {
   font-size: 16px;
   padding: 5px 10px;

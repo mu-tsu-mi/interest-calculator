@@ -1,0 +1,17 @@
+.slider-container {
+  margin: 2rem 0;
+}
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.slider-labels {
+  display: flex;
+  gap: 5rem;
+}
+.rate-display,
+.months-display {
+  display: flex;
+  gap: 0.5rem;
+}

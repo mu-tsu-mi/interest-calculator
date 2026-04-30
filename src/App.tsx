@@ -1,13 +1,15 @@
 import "./App.css";
 import Header from "./components/Header";
-import UserInput from "./components/UserInput";
+import UserInput from "./components/user-input/UserInput";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <UserInput />
-      {/* <CalculationResult /> */}
+      <div className="input-result-wrapper">
+        <UserInput />
+        {/* <CalculationResult /> */}
+      </div>
     </div>
   );
 }
