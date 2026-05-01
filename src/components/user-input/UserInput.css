@@ -20,10 +20,13 @@
   accent-color: var(--slider);
 }
 .rate-display,
-.months-display,
-.amount-display {
+.months-display {
   display: flex;
   gap: 0.5rem;
+}
+.amount-display {
+  display: flex;
+  justify-content: space-evenly;
 }
 #amount-input {
   border: 0.1rem solid var(--bg);

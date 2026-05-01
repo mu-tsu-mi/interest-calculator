@@ -1,10 +1,13 @@
 import { createContext, useState, useMemo } from "react";
 import type { ReactNode } from "react";
 
-// setter: React.Dispatch or (val: number) => void
+/* setter: React.Dispatch or (val: number) => void
+React.Dispatch<React.SetStateAction<number>>: React's useState for a number state. It allows both
+a new direct value: setX(123) and an updater function: setX(prev => prev + 1)
+*/
 interface CalculatorContextType {
   principal: number;
-  setPrincipal: (val: number) => void;
+  setPrincipal: React.Dispatch<React.SetStateAction<number>>;
   rate: number;
   setRate: React.Dispatch<React.SetStateAction<number>>;
   months: number;

@@ -8,7 +8,7 @@ export default function UserInput() {
     console.log("Calculator Context is not available");
     return null;
   }
-  const { principal, setPrincipal, rate, setRate, months, setMonths, result } =
+  const { principal, setPrincipal, rate, setRate, months, setMonths } =
     calculator;
 
   // slider for interest rate
