@@ -10,8 +10,25 @@
   display: flex;
   gap: 5rem;
 }
+.slider-labels span {
+  color: var(--range-value);
+  font-size: 0.8rem;
+}
+/* for slider colour. accent-color is supported by most of modern browsers. Or Needs to set by vendor(vendor specific pseudo elements */
+#rate-slider,
+#month-slider {
+  accent-color: var(--slider);
+}
 .rate-display,
-.months-display {
+.months-display,
+.amount-display {
   display: flex;
   gap: 0.5rem;
+}
+#amount-input {
+  border: 0.1rem solid var(--bg);
+  outline: none;
+}
+#amount-input:focus {
+  border-color: var(--title);
 }

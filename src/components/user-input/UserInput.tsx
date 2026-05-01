@@ -21,9 +21,10 @@ export default function UserInput() {
 
   return (
     <div className="user-input-container">
-      <div>
-        <label>Amount / AUD</label>
+      <div className="amount-display">
+        <label>Amount/AUD</label>
         <input
+          id="amount-input"
           type="number"
           value={principal}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -71,8 +72,8 @@ export default function UserInput() {
             }
           />
           <div className="slider-labels">
-            <div>{minMonth}</div>
-            <div>{maxMonth}</div>
+            <span>{minMonth}</span>
+            <span>{maxMonth}</span>
           </div>
         </div>
       </div>
