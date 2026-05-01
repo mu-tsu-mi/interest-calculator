@@ -22,7 +22,7 @@ export default function UserInput() {
   return (
     <div className="user-input-container">
       <div className="amount-display">
-        <label>Amount/AUD</label>
+        <label>Principal/AUD</label>
         <input
           id="amount-input"
           type="number"

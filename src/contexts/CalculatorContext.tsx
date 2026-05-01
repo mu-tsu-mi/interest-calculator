@@ -33,7 +33,17 @@ export function CalculatorProvider({ children }: CalculatorProviderProps) {
     const totalVal = principal * Math.pow(1 + interestRate, months);
     const interestAmount = totalVal - principal;
 
-    return { total: totalVal.toFixed(2), interest: interestAmount.toFixed(2) };
+    // Use the host default language with options for number formatting
+    return {
+      total: totalVal.toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }),
+      interest: interestAmount.toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }),
+    };
   }, [principal, rate, months]);
 
   return (

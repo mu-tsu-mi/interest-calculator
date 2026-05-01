@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import UserInput from "./components/user-input/UserInput";
+import CalculationResult from "./components/calc-result/CalculationResult";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Header />
       <div className="input-result-wrapper">
         <UserInput />
-        {/* <CalculationResult /> */}
+        <CalculationResult />
       </div>
     </div>
   );
