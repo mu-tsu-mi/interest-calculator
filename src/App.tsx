@@ -6,10 +6,12 @@ import CalculationResult from "./components/calc-result/CalculationResult";
 function App() {
   return (
     <div className="app">
-      <Header />
-      <div className="input-result-wrapper">
-        <UserInput />
-        <CalculationResult />
+      <div className="app-card">
+        <Header />
+        <div className="input-result-wrapper">
+          <UserInput />
+          <CalculationResult />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,15 @@
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.balance-wrapper,
+.interest-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.balance-wrapper {
+  font-size: 120%;
+}
