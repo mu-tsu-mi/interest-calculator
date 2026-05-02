@@ -20,7 +20,7 @@
 
 .input-result-wrapper {
   background-image: url("./assets/piggybank.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }

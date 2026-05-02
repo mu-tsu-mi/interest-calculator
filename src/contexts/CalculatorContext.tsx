@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 React.Dispatch<React.SetStateAction<number>>: React's useState for a number state. It allows both
 a new direct value: setX(123) and an updater function: setX(prev => prev + 1)
 */
+// principal type is string to fix number entry from mobile
 interface CalculatorContextType {
   principal: string;
   setPrincipal: React.Dispatch<React.SetStateAction<string>>;
