@@ -6,8 +6,8 @@ React.Dispatch<React.SetStateAction<number>>: React's useState for a number stat
 a new direct value: setX(123) and an updater function: setX(prev => prev + 1)
 */
 interface CalculatorContextType {
-  principal: number;
-  setPrincipal: React.Dispatch<React.SetStateAction<number>>;
+  principal: string;
+  setPrincipal: React.Dispatch<React.SetStateAction<string>>;
   rate: number;
   setRate: React.Dispatch<React.SetStateAction<number>>;
   months: number;
@@ -26,15 +26,15 @@ const CalculatorContext = createContext<CalculatorContextType | undefined>(
 );
 
 export function CalculatorProvider({ children }: CalculatorProviderProps) {
-  const [principal, setPrincipal] = useState(10000);
+  const [principal, setPrincipal] = useState("10000");
   const [rate, setRate] = useState(5);
   const [months, setMonths] = useState(12);
 
   const result = useMemo(() => {
     const interestRate = rate / 100 / 12;
 
-    const totalVal = principal * Math.pow(1 + interestRate, months);
-    const interestAmount = totalVal - principal;
+    const totalVal = Number(principal) * Math.pow(1 + interestRate, months);
+    const interestAmount = totalVal - Number(principal);
 
     // Use the host default language with options for number formatting
     return {

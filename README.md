@@ -34,9 +34,15 @@ Interest Calculator is a web application that helps users quickly calculate inte
 - Click the "Calculate" button to view the interest and total amount.
 - Results are displayed instantly below the input form.
 
-## App Image
+## Demo
+
+### App Image
 
 ![App Screenshot](public/interest-calculator-image.png)
+
+### URL
+
+[Demo site](https://interest-calculator-o74x.onrender.com)
 
 ## Features
 

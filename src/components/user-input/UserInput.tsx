@@ -28,7 +28,7 @@ export default function UserInput() {
           type="number"
           value={principal}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setPrincipal(Number(e.target.value))
+            setPrincipal(e.target.value)
           }
         />
       </div>
